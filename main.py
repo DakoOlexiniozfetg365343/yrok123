@@ -10,7 +10,7 @@ data = r.text
 soup = BeautifulSoup (data, 'html.parser')
 
 us = soup.find_all('a', {
-    "href":"/currencies/bitcoin/markets/"
+    "href":"/currencies/ethereum/markets/"
 })
 
 
