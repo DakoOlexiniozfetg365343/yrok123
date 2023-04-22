@@ -36,7 +36,11 @@ try:
 
     db = client["Alexij"]
     collection = db['Items']
-    collection.insert_one({"iten": "Test"})
+
+
+    for n in ss:
+        print(n.text)
+        collection.insert_one({"item": n.text})
 
 except Exception as e:
     print(e)
